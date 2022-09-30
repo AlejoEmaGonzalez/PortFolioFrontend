@@ -1,0 +1,20 @@
+{
+  "name": "portfoliofrontend",
+  "version": "1.0.0",
+  "description": "Repositorio  para Front-end",
+  "main": "index.js",
+  "scripts": {
+    "start":"http-server -p 8436 "
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejoEmaGonzalez/PortFolioFrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejoEmaGonzalez/PortFolioFrontend/issues"
+  },
+  "homepage": "https://github.com/AlejoEmaGonzalez/PortFolioFrontend#readme"
+}

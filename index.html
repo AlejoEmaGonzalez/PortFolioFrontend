@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- -- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <!-- Nav -->
+    <div class="container-fluid "
+      style="padding: 0 10px 10px 0;background-color: black; position: relative; justify-content: center; ">
+      <div class="row">
+        <div class="col-3 text-center ">
+          <img class="img"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR8AAACvCAMAAADzNCq+AAAAgVBMVEUAAAD////h4eF/f386Ojq5ubno6Ojc3Nzv7+/z8/P5+fnHx8epqakxMTH7+/uVlZVISEh5eXljY2Ozs7MpKSnT09NycnLMzMwiIiKUlJSJiYlhYWFoaGhKSkqioqKNjY0LCwtYWFhBQUFQUFAmJiYWFhadnZ23t7cUFBSEhIQ2NjY6VhJyAAAInElEQVR4nO2c2WKiShBAAQUEFBUVXFDBLZr//8BLVS82ChqxuWZm6jwkyF4n0Et1G8MgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCEIjWd55k7j76RjaY26bGnDGn46jJVIddoDg05G0QqRLj2kmn46lBbJQnx9z8elo9LPRqMcMPx2Nfhydfsz40+HoZq5Vj7n5dDy66er1Y386Ht2Qn8eQn8eQn8eQn8f88X5OrhNM2zv9vZ/EbcVPugS2mm57u1yucGEMV7U0nbWCWz9usS5vw4/HdlhpuetveakvOKmv5aSV3PqZw8rmPfpaP3u+w5eWu47lmWAJ/6gtceOnx9YOtfvpw8lNXT204dX01rX+z/KHrw50+4FuXgypgr2Ou7ZNXU/iM279iA5Uw0K6zs8a3SfFj0lp/SASvgarKBqdlRuLopuU7SjKM+XuyicS5NFILh/3UZQffiDhAXf1l8iS+lr9QBYlMS7FT4+tmBSL+R6eKowq4cf7szXbjJcPT/JWjBOugRTl6nq54iP82ogSGx/7kFWSAU9seX2tfkx2g8ZOqx8QcTGmsAt7YKA8Yqkng1dCnE7x+dgTn2awL3wSz7NVql5t5qfQOCh+ObyONE/iKHmMRj/+kW2JNfrBq2TsvehLPyb3M1HPAM8v7OZP+iEPtVferjw/ZT9XzuWjTjr9mA7fdNLnB05l8d+O6seaWcYIFrzxMdtzP5gRn/KYZaT2BlN5ifE9XMKDMtsuhumNH4dJRcn9y26eTZdqRHr8yDR7g0qsxo/DgmBXG0k/AZbHOLoE7a45Dw1W4FjIrFhImR9LnEYu8PJZ9QOrcEFJ0y2Kj2Gm1Y88vaXJDwbeNbIMA9tIP2xrT+gQfnrcJu50Yp/xxPAiesLP170fzO5COa4UydjWbd5Aqu6f8kps/nIlVu0Hm5shAAtO2Q8OoCxUP/D29CzHsTymQfrp/8SPJ/ycl7bFi2zdfkQlNtLj5+Y53JX8YKW2VP2U/ipJUz9b5STa/fhztrlfvfk1P4ebnU4lP0dYGqp+IELH5fQb+sHq1wv6dit+xFjxWIcfKCL9PgOqbqvkBwNKVD/gQ20dV/uxH/uBZxZaT6Iy1OvH442gV+v4Sj+uskHcruIHm37QalxzP7Ypm9k1fiD43mM/8JJejJbKZywijPs3o5Gfg7x1Ec+i5IcVFMGGNSfGPCQn7s4Pu3RZ6Qd3nS23l3o/2EQyeNtctx8RzcuDq1V+llcVPDSr5EekzkzhR+0cW5V+RNs+qfcDbSfT77FOmGY/oj0+e1VPpZ+Zqc7s6MBuWcnPWkQr/Byvfxe30o8wGNT7EQm5nqfdj5jH82rlVe0H6++L/JjBx2HJj3HAEmdrCD/FOycMJTziQNwQz6VOxNY7P6J9mOMpZphU0epH9FYur+tpPn4B7Ql8jmT6Zh+n6e7BEes4frS5YBCn58d7PKei/86bPnkDPe+N72BT5d2ANHPvhyf0Xq66GvvJ7MVq992NsFL6bVPQ7vx0+IbeffAt+THUEzx5Zf53bv2Inu/rVVdzP8oMv183v6pm/GJiNqORH9F9De0WB2oaUj3+tWyop2n5vI7SNPptrxZy+/xghbiqjL1FP7+XWz/QZWk2dPFv+DHDoGHR/I/4uaXn3FNf9/9rftxj5VHHumes0k93tyvK3nm8iHn99D2CFVnayfHjfLXclr//M4g6p3G6y2D5MNqNioW8A3V/dzU+XVK+b1ZsKc6462xx1sw8XcQDfoL5Or4sxvvqu3+FJ37qDqv7VkKlH+gozllnN8E7hi7jGepIKO263LUj2z4L0TkNrQFL0aU59FGv6XC2L4wpB1NsHXg5653wG5AjU8Gbw+9P/NRPrKl5xSr9QAQiZJnewhZWUqorWdv0qGbz12zwA2P3Zc6iAMbYoc/u8T9UKC4gB84Y/ps91Md+6mfr1Iz81PqRBIby550ZZ3Xb+G7vkTIXKVT9mMfbMWVBt+Tn3RLxyftV95WuuqHVej9BmrP5CANxtB8EfdZQPxWPETwH0DrFbOusy3OEVz+zIDC6SwiefZ1vLPzMtqyx7/VZ0giG0i5xVvxcwUv55ty7Z/WX71bh1e1e6wcnYmDsS+6HfRdKDl5gtmnPCivMQKWqn/JkKDhoogwlgyAcQ765BVScternRR77wVL9S+agDT6kg/N1BtydVFfyUzrf2VL8QNUFOVtfXOn6yJ9z2OH7z/EjMslXP3sRosiLjuSKSj+x7fisRBZ+IoON0pX9TDczjxeR7/mpLuMaUznp7YGf6NYP5lj3NX6+e6Ur1ftR55e+56fhPLo6Kud/P/CDOlJcDK9+4ho/WOwFp47zxA+WO85ksdDgJzF1Mqi6hPQz5QqvfsTwA3/Rx2w0vl/tB8OGGsx94sflF/zW4CfXqac6eyz9YEW8K/mRU542PHhfSFjc+VkIDc/8eFz6QIMfQ8s/B+BUPj5411aep/iogijFD1oIVjkO9LuGHNiyWXu45AebB0W7B+dRP/IDr7FzNI62Dj9NU80V1Hy5otQinpb9lDoqMPZValCL/gXzU6prH/kp/cnf9qPrK95W3b/gUPz4OPyn+rnO5eXltOiQ2dyYUj6LrHjyxM+cd8p6jhY/xnyYWG/i2lHt6aUfZ8hWBKEfXru+JzTk2+LlHNh+GM726KkLb6Dvi/bPAqfexdPi+D74Kbas0I/vY+bcLTZAE+yA70Ri9ENfh5+WwfJ5kNfn3+f7/X3JBfmP8C6B081/NsaRrdcv3OFnubZ/XkF2xP56XvKzczfj1ShiffE3Jr7/QbzkR62kem3e1e+hqZ9edXPqr8P1/fDH8zIOFusRhtZf+M9y9DAYrde7t2c2EQRBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEATRAv8BYbJ3F+I3e+gAAAAASUVORK5CYII="
+            style="height:60px" alt="ArgentinaPrograma">
+          <a href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+            target="_blank">#YoProgramo</a>
+        </div>
+        <div class="col">
+        </div>
+        <!-- COlumnas para separacion -->
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <!-- --- -->
+        <div class="col position-right">
+          <div class="btn-group py-2 px-1 mt-1">
+            <a href="https://www.linkedin.com/in/gonzalez-emanuel-a05032239/" style="border-color:aqua;" class="btn btn-sm active" aria-current="page" target="_blank"><img
+                src="https://i.pinimg.com/564x/0c/54/79/0c5479e1eeca3d119c2f9bbb90ce80a6.jpg" style="height : 30px"
+                alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/ema_gonzalez01/" style="border-color:aqua;" class="btn btn-sm active" target="_blank"><img
+                src="https://i.pinimg.com/236x/6d/d1/36/6dd136ffd3d3aa068ddde477935a2a0a.jpg" style="height : 30px"
+                alt="Instagram"></a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal" style="border-color:aqua;"
+              class="btn btn-sm active"><img
+                src="https://cdn.create.vista.com/api/media/medium/471171000/stock-vector-black-user-shape-silver-plated?token="
+                style="height : 30px" alt="Login"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade " id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-dialog ">
+        <div class="modal-content bg-dark text-white ">
+          <div class="modal-header" style="border: 0;"><button type="button" typePasswordX.value=""
+              data-bs-dismiss="modal" class="btn-close btn-close-white" aria-label="Close"
+              data-bs-keyboard="false"></button></div>
+
+          <div class="card bg-dark text-white">
+            <div class="card-body p-2 text-center">
+
+              <div class="mb-md-5 mt-md-2 pb-2">
+
+                <h4 class="pb-2">Iniciar sesión para Editar</h4>
+
+
+                <div class="form-outline form-white mb-4">
+                  <input type="email" placeholder="Nombre de Usuario o Email" id="typeEmailX"
+                    class="form-control form-control-lg " />
+
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="typePasswordX" value="" class="form-control form-control-lg"
+                    placeholder="Contraseña" />
+
+                </div>
+
+                <p class="small mb-2 pb-lg-2"><a class="text-white-50" href="#!">¿Has olvidado la contraseña?</a></p>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              </div>
+
+              <div>
+                <p class="mb-0">¿No tiene Cuenta? <a href="#!" class="text-white-50 fw-bold">Registrarse</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Banner + perfil -->
+    <div class="card mat-card" id="primera-carta">
+      <div id="profile-background"><img src="./asset/banner.jpg" alt="Banner">
+        <div class="btn-edit" id="edit-banner"><i class="fa fa-pen"></i></div>
+      </div>
+      <div class="info" style="padding: 16px;">
+        <div class="contenedor " id="info-img">
+          <div class="img-btn">
+          <img class="image-perfil"
+            src="https://pps.whatsapp.net/v/t61.24694-24/56760746_426471904850639_2218942106985037824_n.jpg?ccb=11-4&oh=01_AVw-FOERjOqtlIVz9pVzO5j6RR7b2NUFWbm7LbDMg9pwwA&oe=633DDD78"></img>
+           <div class="btn-edit" id="edit-foto"><i class="fa fa-pen"></i></div>
+          </div>
+          
+        </div>
+      
+        <div id="info-data">
+          
+            <div calss="contenedor_nom" id="edit-content">
+              <h1 id="text-nombre" style="width:100%;">Emanuel Gonzalez</h1>
+                <div class="contenedor-btn">
+                  <div type="button" class="btn-edit" onclick="edit()" id="edit-text-nom"><i class="fa fa-pen"></i></div>
+                  <div type="button" class="btn-edit" onclick="editOk()" id="edit-text-nom-ok" hidden=true><i class="fa fa-check"></i></i></div>
+                </div>
+              
+            </div>
+              
+            <div calss="contenedor_nom" id="edit-content">
+            <div id="text-degree">Full Stack Developer Jr.</div>
+            <div class="contenedor-btn">
+              <div type="button" class="btn-edit" onclick="edit_degree()" id="edit-text-degree"><i class="fa fa-pen"></i></div>
+              <div type="button" class="btn-edit" onclick="edit_degreeOk()" id="edit-text-degree-ok" hidden=true><i class="fa fa-check"></i></i></div>
+            </div>
+            </div>
+            <div calss="contenedor_nom" id="edit-content">
+            <div id="text-home">Cordoba(Argentina)</div>
+            <div class="contenedor-btn">
+              <div type="button" class="btn-edit" onclick="edit_home()" id="edit-text-home"><i class="fa fa-pen"></i></div>
+              <div type="button" class="btn-edit" onclick="edit_homeOk()" id="edit-text-home-ok" hidden=true><i class="fa fa-check"></i></i></div>
+            </div>
+            </div>
+            
+          
+        </div>
+        <button type="button" data-bs-toggle="" data-bs-target="" class="btn btn-sm  btn-primary active mt-2" >Informacion de contacto</button>
+      </div>
+    </div>
+    <!-- ---- -->
+    <!-- Modal de contacto -->
+    <!-- <div class="modal fade " id="modal-contacto" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+      aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-dialog ">
+        <div class="modal-content bg-dark text-white ">
+          <div class="modal-header" style="border: 0;"></div>
+
+        </div>
+      </div>
+    </div> -->
+
+  </header>
+  <section>
+    <!-- ACERCA DE -->
+    <div class="card mat-card elim_card" id="acercade">
+      <div class="card-titles">
+        <h2>Acerca de</h2>
+        
+      </div>
+      <div calss="contenedor_nom" id="edit-content">
+        <p id="text-acercade">Técnico electronico, estudiante de dearrollo web Full Stack.</p>
+        <div class="contenedor-btn">
+          <div type="button" class="btn-edit" onclick="edit_acercade()" id="edit-text-acercade"><i class="fa fa-pen"></i></div>
+          <div type="button" class="btn-edit" onclick="edit_acercadeOk()" id="edit-text-acercade-ok" hidden=true><i class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-elim" onclick="elim_acercade()"><i class="fa fa-xmark"></i></i></div></div>
+        </div>
+      
+    </div>
+<!-- EXPERIENCIA -->
+  <div class="card mat-card elim_card"id="exp">
+    <div class="card-titles">
+      <h2>Experiencia</h2>
+    </div>
+    <div calss="contenedor_nom" id="edit-content">
+      <p id="text-exp">Texto para ralatar la experiencia laboral</p>
+      <div class="contenedor-btn">
+        <div type="button" class="btn-edit" onclick="edit_exp()" id="edit-text-exp"><i class="fa fa-pen"></i></div>
+        <div type="button" class="btn-edit" onclick="edit_expOk()" id="edit-text-exp-ok" hidden=true><i class="fa fa-check"></i></i></div>
+        <div type="button" class="btn-elim" onclick="elim_exp()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
+      </div>
+    
+  </div>
+  <!-- EDUCACION -->
+  <div class="card mat-card elim_card"id="educ">
+    <div class="card-titles">
+      <h2>Educación</h2>
+      
+    </div>
+    <div calss="contenedor_nom" id="edit-content">
+      <p id="text-educ">Texto par redacta la educacion</p>
+      <div class="contenedor-btn">
+        <div type="button" class="btn-edit" onclick="edit_educ()" id="edit-text-educ"><i class="fa fa-pen"></i></div>
+        <div type="button" class="btn-edit" onclick="edit_educOk()" id="edit-text-educ-ok" hidden=true><i class="fa fa-check"></i></i></div>
+        <div type="button" class="btn-elim" onclick="elim_educ()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- HARD & SOFT SKILLS -->
+  <div class="card mat-card elim_card"id="skills">
+    <div class="card-titles">
+      <h2>Hard & Soft Skills</h2>
+      
+    </div>
+    <div calss="contenedor_nom">
+      <p id="text-skills">Tablas de Habilidades</p>
+      <div class="contenedor-btn">
+        <div type="button" class="btn-edit" onclick="edit_skills()" id="edit-text-skills"><i class="fa fa-pen"></i></div>
+        <div type="button" class="btn-edit" onclick="edit_skillsOk()" id="edit-text-skills-ok" hidden=true><i class="fa fa-check"></i></i></div>
+        <div type="button" class="btn-elim" onclick="elim_skills()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
+      </div>
+    
+  </div>
+  <!--  PROYECTOS -->
+  <div class="card mat-card elim_card"id="proyect">
+    <div class="card-titles">
+      <h2>Proyectos</h2>
+      
+    </div>
+    <div calss="contenedor_nom">
+      <p id="text-proyect">Demostracion de proyectos</p>
+      <div class="contenedor-btn">
+        <div type="button" class="btn-edit" onclick="edit_proyect()" id="edit-text-proyect"><i class="fa fa-pen"></i></div>
+        <div type="button" class="btn-edit" onclick="edit_proyectOk()" id="edit-text-proyect-ok" hidden=true><i class="fa fa-check"></i></i></div>
+        <div type="button" class="btn-elim" onclick="elim_proyect()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
+      </div>
+    
+  </div>
+  </section>
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
