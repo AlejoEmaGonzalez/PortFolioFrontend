@@ -1,88 +1,81 @@
-
-.mat-card{
-    border-radius: 32px;
-    margin: 10px 10px;  
-    padding: 10px;
-    border-color: #0a66c2;
-    
-}
-.mat-card#first-card{
-    padding: 0;
-    
-}
-div#profile-background{
-    display: flex;
-   z-index: 1;
-    
-}
-div#profile-background img{
-    position: relative;
-    width: 100%;
-    border-radius: 32px 32px 0 0;
-    
-}
-.btn-edit{
-    visibility: visible;
-}
-div#edit-banner{
-    position: absolute;
-    right: 40px;
-    top: 30px;
-}
-.contenedor{
-    display: flex;
-    align-items: top;
-    height: auto;
-    justify-content: space-between;
-    padding-bottom: 0;
-    
-}
-.img-btn{
-    display: flex;
-    align-items:baseline;
-    
-    position: relative;
-    
-    top: -50px;
-    z-index: 2;
-}
-.image-perfil{
-    
-    border-radius: 50%;
-    width: 252px;
-    height: 252px;
-}
-.elim_card{
-    position: relative;
-}
-.btn-edit{
-    border: none;
-    margin-right: 5px;
-}
-div#edit-foto{
-    position: absolute;
-    top: 80%;
-    right: 0;
-
-}
-div#info-data{
-    padding-left: 5px;
-    width: 350px;
-    margin-top: 1px;
+.mat-card {
+  border-radius: 32px;
+  margin: 10px 10px;
+  padding: 10px;
+  border-color: #0a66c2;
 }
 
-.contenedor-btn{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-
+.mat-card#first-card {
+  padding: 0;
 }
 
+div#profile-background {
+  display: flex;
+  z-index: 1;
+}
 
+div#profile-background img {
+  position: relative;
+  width: 100%;
+  border-radius: 32px 32px 0 0;
+}
 
+.btn-edit {
+  visibility: visible;
+}
 
+div#edit-banner {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
 
+.contenedor {
+  display: flex;
+  align-items: top;
+  height: auto;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
 
+.img-btn {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
 
+.image-perfil {
+  border-radius: 50%;
+  width: 252px;
+  height: 252px;
+}
 
+.elim_card {
+  position: relative;
+}
+
+.btn-edit {
+  border: none;
+  margin-right: 5px;
+}
+
+div#edit-foto {
+  position: absolute;
+  top: 80%;
+  right: 0;
+}
+
+div#info-data {
+  padding-left: 5px;
+  width: 350px;
+  margin-top: 1px;
+}
+
+.contenedor-btn {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}/*# sourceMappingURL=style.css.map */
