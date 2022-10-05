@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--Bootstrap-->
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!-- -- -->
@@ -40,12 +40,13 @@
         <!-- --- -->
         <div class="col position-right">
           <div class="btn-group py-2 px-1 mt-1">
-            <a href="https://www.linkedin.com/in/gonzalez-emanuel-a05032239/" style="border-color:aqua;" class="btn btn-sm active" aria-current="page" target="_blank"><img
+            <a href="https://www.linkedin.com/in/gonzalez-emanuel-a05032239/" style="border-color:aqua;"
+              class="btn btn-sm active" aria-current="page" target="_blank"><img
                 src="https://i.pinimg.com/564x/0c/54/79/0c5479e1eeca3d119c2f9bbb90ce80a6.jpg" style="height : 30px"
                 alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/ema_gonzalez01/" style="border-color:aqua;" class="btn btn-sm active" target="_blank"><img
-                src="https://i.pinimg.com/236x/6d/d1/36/6dd136ffd3d3aa068ddde477935a2a0a.jpg" style="height : 30px"
-                alt="Instagram"></a>
+            <a href="https://www.instagram.com/ema_gonzalez01/" style="border-color:aqua;" class="btn btn-sm active"
+              target="_blank"><img src="https://i.pinimg.com/236x/6d/d1/36/6dd136ffd3d3aa068ddde477935a2a0a.jpg"
+                style="height : 30px" alt="Instagram"></a>
             <button type="button" data-bs-toggle="modal" data-bs-target="#modal" style="border-color:aqua;"
               class="btn btn-sm active"><img
                 src="https://cdn.create.vista.com/api/media/medium/471171000/stock-vector-black-user-shape-silver-plated?token="
@@ -103,60 +104,73 @@
     <!-- Banner + perfil -->
     <div class="card mat-card" id="primera-carta">
       <div id="profile-background"><img src="./asset/banner.jpg" alt="Banner">
-        <div type="button" class="btn-edit" id="edit-banner" ><i class="fa fa-pen"></i></div>
+        <div type="button" class="btn-edit" id="edit-banner"><i class="fa fa-pen"></i></div>
       </div>
       <div class="info" style="padding: 16px;">
         <div class="contenedor " id="info-img">
           <div class="img-btn">
-          <img class="image-perfil"
-            src="https://pps.whatsapp.net/v/t61.24694-24/56760746_426471904850639_2218942106985037824_n.jpg?ccb=11-4&oh=01_AVw-FOERjOqtlIVz9pVzO5j6RR7b2NUFWbm7LbDMg9pwwA&oe=633DDD78"></img>
-           <div type="button" class="btn-edit" id="edit-foto"><i class="fa fa-pen"></i></div>
+            <img class="image-perfil"
+              src="https://pps.whatsapp.net/v/t61.24694-24/56760746_426471904850639_2218942106985037824_n.jpg?ccb=11-4&oh=01_AVw-FOERjOqtlIVz9pVzO5j6RR7b2NUFWbm7LbDMg9pwwA&oe=633DDD78"></img>
+            <div type="button" class="btn-edit" id="edit-foto"><i class="fa fa-pen"></i></div>
           </div>
-          
-        </div>
-      
-        <div id="info-data">
-          
-            <div calss="contenedor_nom" id="edit-content">
-              <h1 id="text-nombre" style="width:100%;">Emanuel Gonzalez</h1>
-                <div class="contenedor-btn">
-                  <div type="button" class="btn-edit" onclick="edit()" id="edit-text-nom"><i class="fa fa-pen"></i></div>
-                  <div type="button" class="btn-edit" onclick="editOk()" id="edit-text-nom-ok" hidden=true><i class="fa fa-check"></i></i></div>
-                </div>
-              
-            </div>
-              
-            <div calss="contenedor_nom" id="edit-content">
-            <div id="text-degree">Full Stack Developer Jr.</div>
-            <div class="contenedor-btn">
-              <div type="button" class="btn-edit" onclick="edit_degree()" id="edit-text-degree"><i class="fa fa-pen"></i></div>
-              <div type="button" class="btn-edit" onclick="edit_degreeOk()" id="edit-text-degree-ok" hidden=true><i class="fa fa-check"></i></i></div>
-            </div>
-            </div>
-            <div calss="contenedor_nom" id="edit-content">
-            <div id="text-home">Cordoba(Argentina)</div>
-            <div class="contenedor-btn">
-              <div type="button" class="btn-edit" onclick="edit_home()" id="edit-text-home"><i class="fa fa-pen"></i></div>
-              <div type="button" class="btn-edit" onclick="edit_homeOk()" id="edit-text-home-ok" hidden=true><i class="fa fa-check"></i></i></div>
-            </div>
-            </div>
-            
-          
-        </div>
-        <button type="button" data-bs-toggle="" data-bs-target="" class="btn btn-sm  btn-primary active mt-2" >Informacion de contacto</button>
-      </div>
-    </div>
-    <!-- ---- -->
-    <!-- Modal de contacto -->
-    <!-- <div class="modal fade " id="modal-contacto" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-      aria-hidden="true" aria-labelledby="modalTitle">
-      <div class="modal-dialog ">
-        <div class="modal-content bg-dark text-white ">
-          <div class="modal-header" style="border: 0;"></div>
 
         </div>
+
+        <div id="info-data">
+
+          <div calss="content-nom" id="edit-info">
+            <h1 id="text-nombre" style="width:100%;">Emanuel Gonzalez</h1>
+            <div class="content-btn">
+              <div type="button" class="btn-edit" title="Editar" onclick="edit()" id="edit-text-nom"><i class="fa fa-pen"></i></div>
+              <div type="button" class="btn-edit" title="Aceptar" onclick="editOk()" id="edit-text-nom-ok" hidden=true><i
+                  class="fa fa-check"></i></i></div>
+            </div>
+
+          </div>
+
+          <div calss="content-nom" id="edit-info">
+            <div id="text-degree">Full Stack Developer Jr.</div>
+            <div class="content-btn">
+              <div type="button" class="btn-edit" title="Editar" onclick="edit_degree()" id="edit-text-degree"><i
+                  class="fa fa-pen"></i></div>
+              <div type="button" class="btn-edit" title="Aceptar" onclick="edit_degreeOk()" id="edit-text-degree-ok" hidden=true><i
+                  class="fa fa-check"></i></i></div>
+            </div>
+          </div>
+          <div calss="content-nom" id="edit-info">
+            <div id="text-home">Cordoba(Argentina)</div>
+            <div class="content-btn">
+              <div type="button" class="btn-edit" title="Editar" onclick="edit_home()" id="edit-text-home"><i class="fa fa-pen"></i>
+              </div>
+              <div type="button" class="btn-edit" title="Aceptar" onclick="edit_homeOk()" id="edit-text-home-ok" hidden=true><i
+                  class="fa fa-check"></i></i></div>
+            </div>
+          </div>
+
+
+        </div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modal-contacto"
+          class="btn btn-sm  btn-primary active mt-2">Informacion de contacto</button>
       </div>
-    </div> -->
+    </div>
+    
+    <!-- Modal de contacto -->
+     <div class="modal fade " id="modal-contacto" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+      aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-dialog" style="width: 800px;">
+        <div class="modal-content bg-dark text-white ">
+          <div class="modal-header" style="border: 0;">
+            <div class="info_contacto">
+              <h2>Contactarme por cualquier consulta laboral</h2>
+              <h5>Numero de telefono: <a href="tel:+543518031533">+543518031533</a></h5>
+              <h5>Correo electronico: <a href="mailto:ema_alejo01@hotmail.com?Subject=Consulta%20de%20Portfolio">ema_alejo01@hotmail.com</a></h5>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
   </header>
   <section>
@@ -164,77 +178,93 @@
     <div class="card mat-card elim_card" id="acercade">
       <div class="card-titles">
         <h2>Acerca de</h2>
-        
+
       </div>
       <div calss="contenedor_nom" id="edit-content">
         <p id="text-acercade">Técnico electronico, estudiante de dearrollo web Full Stack.</p>
         <div class="contenedor-btn">
-          <div type="button" class="btn-edit" onclick="edit_acercade()" id="edit-text-acercade"><i class="fa fa-pen"></i></div>
-          <div type="button" class="btn-edit" onclick="edit_acercadeOk()" id="edit-text-acercade-ok" hidden=true><i class="fa fa-check"></i></i></div>
-          <div type="button" class="btn-elim" onclick="elim_acercade()"><i class="fa fa-xmark"></i></i></div></div>
+          <div type="button" class="btn-edit" title="Editar" onclick="edit_acercade()" id="edit-text-acercade"><i
+              class="fa fa-pen"></i></div>
+          <div type="button" class="btn-edit" title="Aceptar" onclick="edit_acercadeOk()" id="edit-text-acercade-ok" hidden=true><i
+              class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-edit" title="Eliminar sección" onclick="elim_acercade()"><i class="fa fa-xmark"></i></i></div>
         </div>
-      
-    </div>
-<!-- EXPERIENCIA -->
-  <div class="card mat-card elim_card"id="exp">
-    <div class="card-titles">
-      <h2>Experiencia</h2>
-    </div>
-    <div calss="contenedor_nom" id="edit-content">
-      <p id="text-exp">Texto para ralatar la experiencia laboral</p>
-      <div class="contenedor-btn">
-        <div type="button" class="btn-edit" onclick="edit_exp()" id="edit-text-exp"><i class="fa fa-pen"></i></div>
-        <div type="button" class="btn-edit" onclick="edit_expOk()" id="edit-text-exp-ok" hidden=true><i class="fa fa-check"></i></i></div>
-        <div type="button" class="btn-elim" onclick="elim_exp()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
       </div>
-    
-  </div>
-  <!-- EDUCACION -->
-  <div class="card mat-card elim_card"id="educ">
-    <div class="card-titles">
-      <h2>Educación</h2>
-      
+
     </div>
-    <div calss="contenedor_nom" id="edit-content">
-      <p id="text-educ">Texto par redacta la educacion</p>
-      <div class="contenedor-btn">
-        <div type="button" class="btn-edit" onclick="edit_educ()" id="edit-text-educ"><i class="fa fa-pen"></i></div>
-        <div type="button" class="btn-edit" onclick="edit_educOk()" id="edit-text-educ-ok" hidden=true><i class="fa fa-check"></i></i></div>
-        <div type="button" class="btn-elim" onclick="elim_educ()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div>
+    <!-- EXPERIENCIA -->
+    <div class="card mat-card elim_card" id="exp">
+      <div class="card-titles">
+        <h2>Experiencia</h2>
       </div>
-    </div>
-    
-  </div>
-  <!-- HARD & SOFT SKILLS -->
-  <div class="card mat-card elim_card"id="skills">
-    <div class="card-titles">
-      <h2>Hard & Soft Skills</h2>
-      
-    </div>
-    <div calss="contenedor_nom">
-      <p id="text-skills">Tablas de Habilidades</p>
-      <div class="contenedor-btn">
-        <div type="button" class="btn-edit" onclick="edit_skills()" id="edit-text-skills"><i class="fa fa-pen"></i></div>
-        <div type="button" class="btn-edit" onclick="edit_skillsOk()" id="edit-text-skills-ok" hidden=true><i class="fa fa-check"></i></i></div>
-        <div type="button" class="btn-elim" onclick="elim_skills()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
+      <div calss="contenedor_nom" id="edit-content">
+        <p id="text-exp">Texto para ralatar la experiencia laboral</p>
+        <div class="contenedor-btn">
+          <div type="button" class="btn-edit" title="Editar" onclick="edit_exp()" id="edit-text-exp"><i class="fa fa-pen"></i></div>
+          <div type="button" class="btn-edit" title="Aceptar" onclick="edit_expOk()" id="edit-text-exp-ok" hidden=true><i
+              class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-edit" title="Eliminar sección" onclick="elim_exp()" id="elim_acercade"><i class="fa fa-xmark"></i></i>
+          </div>
+        </div>
       </div>
-    
-  </div>
-  <!--  PROYECTOS -->
-  <div class="card mat-card elim_card"id="proyect">
-    <div class="card-titles">
-      <h2>Proyectos</h2>
-      
+
     </div>
-    <div calss="contenedor_nom">
-      <p id="text-proyect">Demostracion de proyectos</p>
-      <div class="contenedor-btn">
-        <div type="button" class="btn-edit" onclick="edit_proyect()" id="edit-text-proyect"><i class="fa fa-pen"></i></div>
-        <div type="button" class="btn-edit" onclick="edit_proyectOk()" id="edit-text-proyect-ok" hidden=true><i class="fa fa-check"></i></i></div>
-        <div type="button" class="btn-elim" onclick="elim_proyect()" id="elim_acercade" ><i class="fa fa-xmark"></i></i></div></div>
+    <!-- EDUCACION -->
+    <div class="card mat-card elim_card" id="educ">
+      <div class="card-titles">
+        <h2>Educación</h2>
+
       </div>
-    
-  </div>
+      <div calss="contenedor_nom" id="edit-content">
+        <p id="text-educ">Texto par redacta la educacion</p>
+        <div class="contenedor-btn">
+          <div type="button" class="btn-edit" title="Editar" onclick="edit_educ()" id="edit-text-educ"><i class="fa fa-pen"></i></div>
+          <div type="button" class="btn-edit" title="Aceptar" onclick="edit_educOk()" id="edit-text-educ-ok" hidden=true><i
+              class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-edit" title="Eliminar sección" onclick="elim_educ()" id="elim_acercade"><i class="fa fa-xmark"></i></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- HARD & SOFT SKILLS -->
+    <div class="card mat-card elim_card" id="skills">
+      <div class="card-titles">
+        <h2>Hard & Soft Skills</h2>
+
+      </div>
+      <div calss="contenedor_nom">
+        <p id="text-skills">Tablas de Habilidades</p>
+        <div class="contenedor-btn">
+          <div type="button" class="btn-edit" title="Editar" onclick="edit_skills()" id="edit-text-skills"><i class="fa fa-pen"></i>
+          </div>
+          <div type="button" class="btn-edit" title="Aceptar" onclick="edit_skillsOk()" id="edit-text-skills-ok" hidden=true><i
+              class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-edit" title="Eliminar sección" onclick="elim_skills()" id="elim_acercade"><i class="fa fa-xmark"></i></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--  PROYECTOS -->
+    <div class="card mat-card elim_card" id="proyect">
+      <div class="card-titles">
+        <h2>Proyectos</h2>
+
+      </div>
+      <div calss="contenedor_nom">
+        <p id="text-proyect">Demostracion de proyectos</p>
+        <div class="contenedor-btn">
+          <div type="button" class="btn-edit" title="Editar" onclick="edit_proyect()" id="edit-text-proyect"><i class="fa fa-pen"></i>
+          </div>
+          <div type="button" class="btn-edit" title="Aceptar" onclick="edit_proyectOk()" id="edit-text-proyect-ok" hidden=true><i
+              class="fa fa-check"></i></i></div>
+          <div type="button" class="btn-edit" title="Eliminar sección" onclick="elim_proyect()" id="elim_acercade"><i
+              class="fa fa-xmark"></i></i></div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
 
